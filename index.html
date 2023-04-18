@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>5 A DAY</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <title>FIVE A DAY</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
     <style>
         body {
             font-family: 'Permanent Marker', cursive;
             margin: 0;
             padding: 0;
-background: black;
+            background: black;
         }
 
         header, footer {
@@ -24,9 +24,9 @@ background: black;
 
         .logo {
             color: white;
-    font-size: 2rem;
-    text-align: center;
-    padding-top: 1rem;
+            font-size: 2rem;
+            text-align: center;
+            padding-top: 1rem;
         }
 
         main {
@@ -44,7 +44,7 @@ background: black;
             flex: 1 1 200px;
             text-align: center;
             position: relative;
-margin: 0 auto 1rem auto;
+            margin: 0 auto 1rem auto;
         }
 
         .card-text {
@@ -69,7 +69,7 @@ color: white;
 </head>
 <body>
     <header>
-        <div class="logo">5 A DAY</div>
+        <div class="logo">FIVE A DAY</div>
     </header>
     <main>
         <!-- The cards will be added here via JavaScript -->
@@ -82,9 +82,9 @@ color: white;
         const lists = {
             dayDependent: ['YOGA 11:45', 'PILATES 12:00', 'CORE 11:30','BACK 10:30','STRETCHING 12:00','PSYCHOLOGIST 12:30'],
             notDayDependent: ['MEDITATE 5 MIN','GUIDED MEDITATION 15 MIN','HAVE A WALK', 'BREATHING EXCERCISE','CLEAN FACE','GO PARK GYM','DRINK TEA','HAVE A STRETCH'],
-            lessRegular: ['GO TO THE BEACH', 'HAVE A SWEET', 'GO SWIM'],
-            fruit: ['APPLE', 'BANANA', 'ORANGE', 'STRAWBERRY', 'GRAPES'],
-            veggie: ['CARROT', 'AVOCADO', 'BEANS', 'SPINACH', 'SALAD DAY']
+            lessRegular: ['GO TO THE BEACH', 'HAVE A SWEET', 'GO SWIM','EAT SOME NUTS','DULCE DE LECHE'],
+            fruit: ['APPLES', 'BANANAS', 'ORANGE', 'STRAWBERRIES', 'GRAPES','MELON','COCOUNT WATER','BLUEBERRIES','PEACHES','PINEAPPLE','CHERRIES','RASPBERRIES','CLEMENTINES','MANGO'],
+            veggie: ['CARROTS', 'AVOCADOS', 'TOMATOES', 'SPINACH','GREEN PEAS','BROCCOLI','KALE','BEETS','SWEET POTATOES','CORN','MUSHROOMS','BELL PEPPERS','CUCUMBERS','SALAD DAY']
         };
 
         const colors = ['#accbff', '#92bbff', '#78aaff', '#649eff', '#4188ff'];
@@ -124,7 +124,7 @@ color: white;
 
         const main = document.querySelector('main');
         main.appendChild(createCard(randomText(lists.notDayDependent), colors[0]));
-main.appendChild(createCard(randomText(lists.dayDependent), colors[1]));
+        main.appendChild(createCard(randomText(lists.dayDependent), colors[1]));
         main.appendChild(createCard(randomText(lists.lessRegular), colors[2]));
         main.appendChild(createCard(randomText(lists.fruit), colors[3]));
         main.appendChild(createCard(randomText(lists.veggie), colors[4]));
